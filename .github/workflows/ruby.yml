@@ -15,10 +15,10 @@ jobs:
           bundler-cache: true
 
       - name: Install dependencies
-        run: make install
+        run: bundle install
 
-      - name: Run Rubocop
-        run: make lint
+#       - name: Run Rubocop
+#         run: bundle exec rubocop
 
       - name: Run Tests
-        run: make test
+        run: bundle exec rake

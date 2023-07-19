@@ -21,4 +21,4 @@ jobs:
 #         run: bundle exec rubocop
 
       - name: Run Tests
-        run: bundle exec rake
+        run: rails test

@@ -18,7 +18,7 @@ jobs:
         run: bundle install
 
       - name: Run Rubocop
-        run: rubocop
+        run: bundle exec rubocop
 
       - name: Run Tests
         run: bin/rails test

@@ -1,8 +1,10 @@
 test:
 	bin/rails test
 
+install:
+	bundle install
+
 lint:
 	bundle exec rubocop
 	rubocop
-install:
-	bundle
+

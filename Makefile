@@ -6,5 +6,4 @@ install:
 
 lint:
 	bundle exec rubocop
-	rubocop
-
+	bundle exec slim-lint app/views/

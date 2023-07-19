@@ -1,5 +1,6 @@
 dsdtest:
 	bin/rails test
+
 install:
 	bundle install
 lint:

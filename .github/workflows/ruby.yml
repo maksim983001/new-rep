@@ -11,10 +11,10 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.2
+          ruby-version: 3.0.2
           bundler-cache: true
 
-      - name: Requirements
+      - name: Install dependencies
         run: make install
 
       - name: Run Rubocop

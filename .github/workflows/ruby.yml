@@ -26,3 +26,10 @@ jobs:
 
       - name: Run Tests
         run: bundle exec rspec spec
+      
+      - name: Upload coverage results
+        uses: actions/upload-artifact@master
+        if: always()
+        with:
+          name: coverage-report
+          path: coverage

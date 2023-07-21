@@ -28,8 +28,7 @@ jobs:
         run: bundle exec rspec spec
       
       - name: Upload coverage results
-        uses: actions/upload-artifact@master
-        if: always()
+        uses: upload-artifact@v3
         with:
-          name: coverage-report
+          name: report
           path: coverage

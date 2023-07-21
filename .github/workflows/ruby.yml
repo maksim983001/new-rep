@@ -28,7 +28,7 @@ jobs:
         run: bundle exec rspec spec
       
       - name: Upload coverage results
-        uses: upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: report
           path: coverage
